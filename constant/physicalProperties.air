@@ -1,0 +1,16 @@
+   FoamFile
+   {
+       version     2.0;
+       format      ascii;
+       class       dictionary;
+       location    "constant";
+       object      physicalProperties.air;
+   }
+   // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+   rho             1;         // Density of air [kg/m^3]
+   nu              1.48e-05;  // Kinematic viscosity of air [m^2/s]
+   viscosityModel  Newtonian;
+
+   // ************************************************************************* //
+
