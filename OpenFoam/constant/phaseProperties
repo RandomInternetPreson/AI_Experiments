@@ -1,0 +1,31 @@
+   FoamFile
+   {
+       version     2.0;
+       format      ascii;
+       class       dictionary;
+       location    "constant";
+       object      phaseProperties;
+   }
+   // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+   phases (air water);
+
+   air
+   {
+       transportModel Newtonian;
+       rho             1;         // Density of air [kg/m^3]
+       nu              1.48e-05;  // Kinematic viscosity of air [m^2/s]
+   }
+
+   water
+   {
+       transportModel Newtonian;
+       rho             1000;      // Density of water [kg/m^3]
+       nu              1e-06;     // Kinematic viscosity of water [m^2/s]
+   }
+
+   sigma 0.07;  // Surface tension coefficient [N/m]
+
+   // ************************************************************************* //
+
+
